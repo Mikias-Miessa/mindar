@@ -1,9 +1,9 @@
 import React, { useEffect, useRef } from 'react';
 import 'aframe';
 import 'mind-ar/dist/mindar-image-aframe.prod.js';
-import './App.css'; // Ensure you import the CSS
+import './App.css';
 
-export default () => {
+const MindARViewer = () => {
   const sceneRef = useRef(null);
 
   useEffect(() => {
@@ -41,6 +41,7 @@ export default () => {
         <img
           id='card'
           src='https://cdn.jsdelivr.net/gh/hiukim/mind-ar-js@1.2.0/examples/image-tracking/assets/card-example/card.png'
+          alt='Target'
         />
         <a-asset-item
           id='avatarModel'
@@ -69,3 +70,5 @@ export default () => {
     </a-scene>
   );
 };
+
+export default MindARViewer;
