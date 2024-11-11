@@ -8,9 +8,18 @@
 }
 
 .container {
-  margin: 20px auto;
+  margin: auto auto;
   position: relative;
-  height: 300px;
-  width: 600px;
+  height: 400px;
+  width: 400px;
   overflow: hidden;
+}
+video {
+  position: absolute !important;
+  top: 0 !important;
+  left: 0 !important;
+  z-index: 10 !important;
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
 }
